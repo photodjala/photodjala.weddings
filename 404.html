@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0b0b" />
   <meta name="robots" content="noindex" />
   <title>Stranica nije pronađena | PhotoDjala</title>
-  <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -157,19 +157,43 @@
     <p>Stranica koju tražite ne postoji ili je premještena. Provjerite adresu ili se vratite na početnu — sve je udaljeno jedan klik.</p>
 
     <div class="btn-row">
-      <a class="btn btn-primary" href="/index.html">Nazad na početnu</a>
-      <a class="btn btn-ghost" href="/portfolio.html">Pogledaj portfolio</a>
+      <a class="btn btn-primary" href="index.html" data-root="index.html">Nazad na početnu</a>
+      <a class="btn btn-ghost" href="portfolio.html" data-root="portfolio.html">Pogledaj portfolio</a>
     </div>
 
     <nav class="links">
-      <a href="/index.html">Početna</a>
-      <a href="/portfolio.html">Portfolio</a>
-      <a href="/paketi.html">Paketi</a>
-      <a href="/marketing.html">Marketing usluge</a>
-      <a href="/info.html">Info</a>
+      <a href="index.html" data-root="index.html">Početna</a>
+      <a href="portfolio.html" data-root="portfolio.html">Portfolio</a>
+      <a href="paketi.html" data-root="paketi.html">Paketi</a>
+      <a href="marketing.html" data-root="marketing.html">Marketing usluge</a>
+      <a href="info.html" data-root="info.html">Info</a>
     </nav>
 
     <div class="since">Since 2019</div>
   </main>
+
+  <script>
+    /* Sajt zivi u podfolderu na GitHub Pages (npr. /photodjala.weddings/),
+       a stranicu greske server moze servirati sa BILO KOJE adrese.
+       Zato ovdje racunamo korijen sajta i popravljamo sve linkove i favicon.
+       Ako promijenite ime repozitorija, promijenite samo REPO ispod. */
+    (function () {
+      var REPO = "photodjala.weddings";
+      var path = location.pathname;
+      var base = "/";
+
+      if (path === "/" + REPO || path.indexOf("/" + REPO + "/") === 0) {
+        base = "/" + REPO + "/";
+      }
+
+      var links = document.querySelectorAll("[data-root]");
+      for (var i = 0; i < links.length; i++) {
+        links[i].setAttribute("href", base + links[i].getAttribute("data-root"));
+      }
+
+      var icon = document.querySelector('link[rel="icon"]');
+      if (icon) icon.setAttribute("href", base + "assets/favicon.ico");
+    })();
+  </script>
 </body>
 </html>
