@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Info i kontakt | PhotoDjala</title>
+  <meta name="description" content="Sve informacije o rezervaciji, rokovima isporuke i putnim troškovima." />
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&fm=jpg&q=78&w=2000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="PhotoDjala početna">
+        <img src="assets/logo.png" alt="PhotoDjala">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Glavna navigacija">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="paketi.html">Paketi</a>
+        <a href="marketing.html">Marketing usluge</a>
+        <a href="info.html" class="is-active">Info</a>
+      </nav>
+
+      <a class="header-cta" href="paketi.html">
+        <span class="cta-long">Rezerviši termin</span>
+        <span class="cta-short">Rezerviši</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-label="Otvori meni" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-label="Meni">
+    <a href="portfolio.html"><small>01</small>Portfolio</a>
+    <a href="paketi.html"><small>02</small>Paketi</a>
+    <a href="marketing.html"><small>03</small>Marketing usluge</a>
+    <a href="info.html" class="is-active"><small>04</small>Info</a>
+    <a class="mobile-cta" href="paketi.html">Rezerviši termin</a>
+    <div class="mobile-since">Since 2019</div>
+  </div>
+
+  <section class="page-hero page-fade">
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&fm=jpg&q=78&w=2000" alt="Prostor pripremljen za obred">
+    </div>
+    <div class="page-hero-inner">
+      <div class="eyebrow">Info</div>
+      <h1>Sve što treba znati unaprijed.</h1>
+      <p>Rokovi, putovanja, način isporuke i kontakt na jednom mjestu. Ako nešto nije ovdje — pitajte, odgovaramo isti dan.</p>
+    </div>
+  </section>
+
+  <section class="info-section page-fade" id="info" style="padding-top:62px">
+    <div class="info-panel" data-reveal>
+      <div>
+        <span class="about-eyebrow">Kontakt</span>
+        <h2>Provjerite da li je vaš datum slobodan.</h2>
+        <p>
+          Javite se porukom sa datumom i lokacijom vjenčanja — odgovaramo isti dan sa
+          informacijom o dostupnosti i prijedlogom paketa. Sva dodatna pitanja i posebne želje
+          dogovaramo prije rezervacije.
+        </p>
+        <a class="cta" href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">Pišite nam na WhatsApp</a>
+      </div>
+
+      <dl class="info-list">
+        <div class="info-row"><dt>Wedding paketi</dt><dd>od 700 KM</dd></div>
+        <div class="info-row"><dt>Rok isporuke</dt><dd>do 15 dana · Premium do 20</dd></div>
+        <div class="info-row"><dt>Putni troškovi</dt><dd>do 100 km uključeno</dd></div>
+        <div class="info-row"><dt>Preko 100 km</dt><dd>dodatnih 100 KM</dd></div>
+        <div class="info-row"><dt>Isporuka materijala</dt><dd>online galerija + USB</dd></div>
+        <div class="info-row"><dt>Iskustvo</dt><dd>Since 2019</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section-head" style="width:min(760px,calc(100% - 40px));margin:0 auto 24px" data-reveal>
+    <span>Česta pitanja</span>
+    <h2>Pitanja koja dobijamo</h2>
+  </section>
+
+  <section class="faq" aria-label="Česta pitanja">
+    <details class="faq-item" data-reveal>
+      <summary>Kada dobijamo fotografije i video?</summary>
+      <p>Essential i Signature paketi isporučuju se u roku do 15 dana od vjenčanja, a Premium paket do 20 dana. Materijal dobijate kroz online galeriju i na USB-u.</p>
+    </details>
+
+    <details class="faq-item" data-reveal>
+      <summary>Da li putujete van grada?</summary>
+      <p>Da. Cijene paketa važe za udaljenosti do 100 km. Za lokacije udaljenije od 100 km obračunava se dodatnih 100 KM.</p>
+    </details>
+
+    <details class="faq-item" data-reveal>
+      <summary>Od čega zavisi cijena?</summary>
+      <p>Od odabranog paketa i broja zvanica. Na stranici sa paketima možete odabrati raspon — do 150, 150–300 ili 300+ — i cijene se odmah prilagođavaju.</p>
+    </details>
+
+    <details class="faq-item" data-reveal>
+      <summary>Obrađujete li sve fotografije?</summary>
+      <p>Da, sve finalne fotografije prolaze digitalnu obradu. U Premium paketu radimo i premium obradu, uz pet fotografija sa Photoshop manipulacijom.</p>
+    </details>
+
+    <details class="faq-item" data-reveal>
+      <summary>Snimate li dronom?</summary>
+      <p>Snimanje dronom uključeno je u Signature i Premium pakete, a u Premium paketu radimo i dron fotografiju.</p>
+    </details>
+
+    <details class="faq-item" data-reveal>
+      <summary>Radite li i nešto osim vjenčanja?</summary>
+      <p>Da — radimo foto i video sadržaj za firme i brendove: reels, promo video, business fotografiju i snimanje događaja. Detalji su na stranici Marketing usluge.</p>
+    </details>
+  </section>
+
+  <section class="cta-band" data-reveal style="margin-bottom:90px">
+    <span>Kontakt</span>
+    <h2>Javite nam datum vjenčanja.</h2>
+    <p>Najbrže ćemo odgovoriti na WhatsApp. Pošaljite datum i lokaciju, a mi javljamo dostupnost.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">Pišite na WhatsApp</a>
+      <a class="btn btn-ghost" href="paketi.html">Pogledaj pakete</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="assets/logo.png" alt="PhotoDjala">
+      <nav class="footer-nav">
+        <a href="index.html">Početna</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="paketi.html">Paketi</a>
+        <a href="marketing.html">Marketing usluge</a>
+        <a href="info.html">Info</a>
+        <a href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+      <div class="footer-meta">© 2026 PhotoDjala · Photography &amp; Film · Since 2019</div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

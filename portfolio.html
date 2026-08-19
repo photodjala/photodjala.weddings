@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Portfolio | PhotoDjala</title>
+  <meta name="description" content="Izbor wedding fotografija — PhotoDjala, foto i video za vjenčanja od 2019." />
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&fm=jpg&q=78&w=2000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="PhotoDjala početna">
+        <img src="assets/logo.png" alt="PhotoDjala">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Glavna navigacija">
+        <a href="portfolio.html" class="is-active">Portfolio</a>
+        <a href="paketi.html">Paketi</a>
+        <a href="marketing.html">Marketing usluge</a>
+        <a href="info.html">Info</a>
+      </nav>
+
+      <a class="header-cta" href="paketi.html">
+        <span class="cta-long">Rezerviši termin</span>
+        <span class="cta-short">Rezerviši</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-label="Otvori meni" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-label="Meni">
+    <a href="portfolio.html" class="is-active"><small>01</small>Portfolio</a>
+    <a href="paketi.html"><small>02</small>Paketi</a>
+    <a href="marketing.html"><small>03</small>Marketing usluge</a>
+    <a href="info.html"><small>04</small>Info</a>
+    <a class="mobile-cta" href="paketi.html">Rezerviši termin</a>
+    <div class="mobile-since">Since 2019</div>
+  </div>
+
+  <section class="page-hero page-fade">
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&fm=jpg&q=78&w=2000" alt="Detalj sa vjenčanja">
+    </div>
+    <div class="page-hero-inner">
+      <div class="eyebrow">Portfolio</div>
+      <h1>Trenuci koje smo zaustavili.</h1>
+      <p>Izbor kadrova sa vjenčanja — pripreme, obred, portreti i detalji koji se lako previde. Kliknite na fotografiju za veći prikaz.</p>
+    </div>
+  </section>
+
+  <section class="gallery page-fade" aria-label="Galerija fotografija">
+    <button class="shot" type="button" style="--delay:0ms; --ar:4/5" aria-label="Otvori fotografiju: Mladenci u polju u zlatnom satu">
+      <img loading="lazy" src="assets/pd-01.jpg" data-full="assets/pd-01.jpg" alt="Mladenci u polju u zlatnom satu">
+      <span class="shot-label">Naš rad</span>
+    </button>
+    <button class="shot" type="button" style="--delay:90ms; --ar:3/2" aria-label="Otvori fotografiju: Spojene ruke mladenaca">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&fm=jpg&q=75&w=900&h=600" data-full="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Spojene ruke mladenaca">
+      <span class="shot-label">Detalj</span>
+    </button>
+    <button class="shot" type="button" style="--delay:180ms; --ar:4/5" aria-label="Otvori fotografiju: Mladenci na brdu">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&fm=jpg&q=75&w=900&h=1125" data-full="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Mladenci na brdu">
+      <span class="shot-label">Portret</span>
+    </button>
+    <button class="shot" type="button" style="--delay:0ms; --ar:1/1" aria-label="Otvori fotografiju: Poljubac mladenaca">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&fm=jpg&q=75&w=900&h=900" data-full="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Poljubac mladenaca">
+      <span class="shot-label">Obred</span>
+    </button>
+    <button class="shot" type="button" style="--delay:90ms; --ar:2/3" aria-label="Otvori fotografiju: Mladenci ispred kapije">
+      <img loading="lazy" src="assets/pd-02.jpg" data-full="assets/pd-02.jpg" alt="Mladenci ispred kapije">
+      <span class="shot-label">Naš rad</span>
+    </button>
+    <button class="shot" type="button" style="--delay:180ms; --ar:3/2" aria-label="Otvori fotografiju: Vjenčano prstenje na buketu">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&fm=jpg&q=75&w=900&h=600" data-full="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Vjenčano prstenje na buketu">
+      <span class="shot-label">Detalj</span>
+    </button>
+    <button class="shot" type="button" style="--delay:0ms; --ar:2/3" aria-label="Otvori fotografiju: Mlada i mladoženja sa buketom">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&fm=jpg&q=75&w=900&h=1350" data-full="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Mlada i mladoženja sa buketom">
+      <span class="shot-label">Portret</span>
+    </button>
+    <button class="shot" type="button" style="--delay:90ms; --ar:3/2" aria-label="Otvori fotografiju: Prostor pripremljen za obred">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&fm=jpg&q=75&w=900&h=600" data-full="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Prostor pripremljen za obred">
+      <span class="shot-label">Lokacija</span>
+    </button>
+    <button class="shot" type="button" style="--delay:180ms; --ar:4/5" aria-label="Otvori fotografiju: Mladenci u sivom odijelu i vjenčanici">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&fm=jpg&q=75&w=900&h=1125" data-full="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Mladenci u sivom odijelu i vjenčanici">
+      <span class="shot-label">Portret</span>
+    </button>
+    <button class="shot" type="button" style="--delay:0ms; --ar:1/1" aria-label="Otvori fotografiju: Čaše na svečanom stolu">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&fm=jpg&q=75&w=900&h=900" data-full="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Čaše na svečanom stolu">
+      <span class="shot-label">Detalj</span>
+    </button>
+    <button class="shot" type="button" style="--delay:90ms; --ar:3/2" aria-label="Otvori fotografiju: Crno-bijeli kadar mladenaca">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?auto=format&fit=crop&fm=jpg&q=75&w=900&h=600" data-full="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Crno-bijeli kadar mladenaca">
+      <span class="shot-label">Reportaža</span>
+    </button>
+    <button class="shot" type="button" style="--delay:180ms; --ar:4/5" aria-label="Otvori fotografiju: Mladenci u šetnji poljem">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&fm=jpg&q=75&w=900&h=1125" data-full="https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&fm=jpg&q=75&w=1800" alt="Mladenci u šetnji poljem">
+      <span class="shot-label">Session</span>
+    </button>
+  </section>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Prikaz fotografije">
+    <button class="lb-btn lb-close" type="button" aria-label="Zatvori">✕</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Prethodna">‹</button>
+    <img src="" alt="">
+    <button class="lb-btn lb-next" type="button" aria-label="Sljedeća">›</button>
+    <div class="lb-count"></div>
+  </div>
+
+  <section class="cta-band" data-reveal style="margin-bottom:90px">
+    <span>Sviđa vam se stil?</span>
+    <h2>Napravimo isto ovo za vaš dan.</h2>
+    <p>Pogledajte pakete i javite nam datum — provjeravamo dostupnost i predlažemo paket koji vam odgovara.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="paketi.html">Wedding paketi</a>
+      <a class="btn btn-ghost" href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">Pišite na WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="assets/logo.png" alt="PhotoDjala">
+      <nav class="footer-nav">
+        <a href="index.html">Početna</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="paketi.html">Paketi</a>
+        <a href="marketing.html">Marketing usluge</a>
+        <a href="info.html">Info</a>
+        <a href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+      <div class="footer-meta">© 2026 PhotoDjala · Photography &amp; Film · Since 2019</div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

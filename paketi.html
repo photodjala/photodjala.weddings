@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <script>document.documentElement.classList.add("js");</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Wedding paketi | PhotoDjala</title>
+  <meta name="description" content="Wedding paketi — Essential, Signature i Premium. Cijene prema broju zvanica." />
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&fm=jpg&q=78&w=2000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Kadar cover fotografije na ovoj stranici.
+       VECI procenat = sadrzaj slike se pomjera GORE (100% = dno fotografije).
+       MANJI procenat = sadrzaj se pomjera DOLJE (0% = vrh, obicno nebo). */
+    .page-hero .hero-photo img { object-position: center 90%; }
+
+    /* Malo svjetliji preliv da se fotografija bolje vidi. */
+    .page-hero::before {
+      background:
+        linear-gradient(180deg, rgba(6,6,6,.66) 0%, rgba(6,6,6,.30) 42%, rgba(7,7,7,.78) 82%, #0a0a0a 100%),
+        radial-gradient(circle at 22% 30%, rgba(214,183,122,.10), transparent 60%);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="PhotoDjala početna">
+        <img src="assets/logo.png" alt="PhotoDjala">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Glavna navigacija">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="paketi.html" class="is-active">Paketi</a>
+        <a href="marketing.html">Marketing usluge</a>
+        <a href="info.html">Info</a>
+      </nav>
+
+      <a class="header-cta" href="paketi.html">
+        <span class="cta-long">Rezerviši termin</span>
+        <span class="cta-short">Rezerviši</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-label="Otvori meni" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-label="Meni">
+    <a href="portfolio.html"><small>01</small>Portfolio</a>
+    <a href="paketi.html" class="is-active"><small>02</small>Paketi</a>
+    <a href="marketing.html"><small>03</small>Marketing usluge</a>
+    <a href="info.html"><small>04</small>Info</a>
+    <a class="mobile-cta" href="paketi.html">Rezerviši termin</a>
+    <div class="mobile-since">Since 2019</div>
+  </div>
+
+  <section class="page-hero page-fade">
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&fm=jpg&q=78&w=2000" alt="Mladenci na vjenčanju">
+    </div>
+    <div class="page-hero-inner">
+      <div class="eyebrow">Wedding paketi</div>
+      <h1>Odaberite paket za svoj dan.</h1>
+      <p>Tri paketa, tri nivoa pokrivenosti. Cijene se mijenjaju prema broju zvanica — odaberite raspon ispod i cijene se automatski prilagođavaju.</p>
+    </div>
+  </section>
+
+  <section class="packages page-fade" id="paketi">
+    <div class="section-head">
+      <span>PhotoDjala</span>
+      <h2>Wedding paketi</h2>
+      <div class="guest-selector-wrap">
+        <div class="guest-selector-label">Odaberite broj zvanica</div>
+        <div class="guest-selector" id="guestSelector" style="--tier-index:0">
+          <button class="guest-option active" type="button" data-tier="small" data-index="0">Do 150</button>
+          <button class="guest-option" type="button" data-tier="medium" data-index="1">150–300</button>
+          <button class="guest-option" type="button" data-tier="large" data-index="2">300+</button>
+        </div>
+      </div>
+      <p>
+        Odaberite paket koji najbolje odgovara vašem danu.
+        Svaki paket osmišljen je tako da zabilježimo najvažnije trenutke i sačuvamo ih u prepoznatljivom PhotoDjala stilu.
+      </p>
+    </div>
+
+    <div class="grid">
+
+      <article class="card" data-reveal>
+        <div class="package-name">Essential</div>
+        <div class="package-sub">Wedding Photography</div>
+        <div class="price" data-package="essential">700 KM</div>
+        <ul>
+          <li>1x fotograf</li>
+          <li>Fotografisanje kompletnog vjenčanja</li>
+          <li>Digitalna obrada svih fotografija</li>
+          <li>Online galerija</li>
+          <li>USB sa finalnim fotografijama</li>
+        </ul>
+        <div class="delivery"><strong>Rok isporuke:</strong> do 15 dana</div>
+        <a class="cta" href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">Rezerviši termin</a>
+      </article>
+
+      <article class="card featured" data-reveal style="--delay:110ms">
+        <div class="badge">Najtraženiji</div>
+        <div class="package-name">Signature</div>
+        <div class="package-sub">Photo + Video</div>
+        <div class="price" data-package="signature">1400 KM</div>
+        <ul>
+          <li>1x fotograf</li>
+          <li>1x videograf</li>
+          <li>Photo &amp; Video session na jednoj lokaciji</li>
+          <li>Digitalna obrada svih fotografija</li>
+          <li>Video materijal do 2h</li>
+          <li>Cinematic wedding film</li>
+          <li>Snimanje dronom</li>
+          <li>Fotografija na platnu 40×60 cm</li>
+          <li>Online galerija + USB</li>
+        </ul>
+        <div class="delivery"><strong>Rok isporuke:</strong> do 15 dana</div>
+        <a class="cta" href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">Rezerviši termin</a>
+      </article>
+
+      <article class="card" data-reveal style="--delay:220ms">
+        <div class="package-name">Premium</div>
+        <div class="package-sub">Complete Wedding Experience</div>
+        <div class="price" data-package="premium">2000 KM</div>
+        <ul>
+          <li>Foto + video tim</li>
+          <li>Photo &amp; Video session na više lokacija</li>
+          <li>Premium obrada svih fotografija</li>
+          <li>5 fotografija sa Photoshop manipulacijom</li>
+          <li>Video materijal do 3h</li>
+          <li>Dron fotografija i video</li>
+          <li>Wedding cinematic film</li>
+          <li>Highlight video</li>
+          <li>Fotografija na platnu 50×70 cm</li>
+          <li>Premium wedding photobook</li>
+          <li>Online galerija + USB u ukrasnoj drvenoj kutiji</li>
+          <li>Dodatni sadržaj po dogovoru</li>
+        </ul>
+        <div class="delivery"><strong>Rok isporuke:</strong> do 20 dana</div>
+        <a class="cta" href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">Rezerviši termin</a>
+      </article>
+
+    </div>
+
+    <div class="info-wrap">
+      <div class="info-box" data-reveal>
+        <div class="label">Dodatna usluga</div>
+        <h3>Fotografije na licu mjesta</h3>
+        <p>
+          Omogućavamo izradu fotografija na licu mjesta za vaše goste, kako bi dio uspomena sa vjenčanja mogli ponijeti sa sobom iste večeri.
+        </p>
+      </div>
+
+      <div class="info-box" data-reveal style="--delay:100ms">
+        <div class="label">Putni troškovi</div>
+        <h3>Do 100 km uključeno</h3>
+        <p>
+          Navedene cijene paketa važe za udaljenosti do 100 km. Za lokacije udaljene više od 100 km obračunava se dodatnih 100 KM.
+        </p>
+      </div>
+
+      <div class="info-box" data-reveal style="--delay:200ms">
+        <div class="label">Isporuka</div>
+        <h3>Brza obrada materijala</h3>
+        <p>
+          Essential i Signature paketi isporučuju se u roku do 15 dana, dok je rok isporuke Premium paketa do 20 dana.
+        </p>
+      </div>
+    </div>
+
+    <div class="equipment" data-reveal>
+      <div class="equipment-head">
+        <span>Tehnologija iza svakog kadra</span>
+        <h3>Oprema kojoj vjerujemo</h3>
+        <p>
+          Kako bismo zabilježili svaki trenutak u vrhunskom kvalitetu, koristimo savremenu profesionalnu foto i video opremu.
+          Naša oprema bira se prema situaciji i vrsti snimanja, kako bi svaki kadar imao pravi izgled, dinamiku i atmosferu.
+        </p>
+      </div>
+
+      <div class="equipment-grid">
+        <div class="equipment-item">
+          <strong>Nikon Z6 · Z6 II · Z6 III</strong>
+          <p>
+            Koristimo Nikon Z6, Z6 II i Z6 III tijela koja nam omogućavaju pouzdan rad, odličan kvalitet fotografije i videa te sigurnost u zahtjevnim wedding uslovima.
+          </p>
+        </div>
+
+        <div class="equipment-item">
+          <strong>Objektivi za svaki kadar</strong>
+          <p>
+            Na raspolaganju imamo veliki broj objektiva koje biramo prema sceni — od intimnih detalja i portreta do širokih kadrova, ambijenta i dinamičnih trenutaka tokom cijelog dana.
+          </p>
+        </div>
+
+        <div class="equipment-item">
+          <strong>Cinematic motion</strong>
+          <p>
+            Za video koristimo gimbal stabilizaciju koja omogućava glatke i kontrolisane pokrete kamere, dajući završnom filmu moderan cinematic izgled i prirodan osjećaj kretanja.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fine-print">
+      Cijene i sadržaj paketa odnose se na navedeni obim usluge. Dodatne želje, posebni zahtjevi i dodatni sadržaj dogovaraju se individualno.
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="assets/logo.png" alt="PhotoDjala">
+      <nav class="footer-nav">
+        <a href="index.html">Početna</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="paketi.html">Paketi</a>
+        <a href="marketing.html">Marketing usluge</a>
+        <a href="info.html">Info</a>
+        <a href="https://wa.me/387644586584" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+      <div class="footer-meta">© 2026 PhotoDjala · Photography &amp; Film · Since 2019</div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
