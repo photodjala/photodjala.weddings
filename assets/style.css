@@ -1864,3 +1864,56 @@ footer {
   }
   .lightbox, .lightbox img { transition: none; }
 }
+
+/* =====================================================
+   CUSTOM SCROLLBAR
+   ===================================================== */
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) #0d0d0d;
+}
+
+/* Chrome, Edge, Safari, Opera */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+  border-left: 1px solid rgba(255,255,255,.06);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #e0c489, #b8975c);
+  background-clip: content-box;
+  transition: background .25s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f0dcae, #d6b77a);
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent);
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-corner { background: #0c0c0c; }
+
+/* na dodirnim ekranima sistemska traka je preko sadrzaja — ne diramo je */
+@media (hover: none) {
+  ::-webkit-scrollbar { width: 0; height: 0; }
+  html { scrollbar-width: none; }
+}
+
+/* oznaceni tekst u istim tonovima */
+::selection {
+  background: rgba(214,183,122,.30);
+  color: var(--text);
+}
